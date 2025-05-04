@@ -1,0 +1,52 @@
+#message-container {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 300px;
+    padding: 20px;
+  }
+  
+  .message-card {
+    position: relative;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .message-card p {
+    margin: 0;
+  }
+  
+  .message-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #888;
+  }
+  
+  .message-close:hover {
+    color: #000;
+  }
+  
+  .message-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    background-color: #007bff;
+    width: 100%;
+    transition: width 5s linear;
+  }
+  
+  .message-progress.error {
+    background-color: #ff0000;
+  }
+  
